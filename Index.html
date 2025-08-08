@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ritika – My Cute Si Sister</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      background: linear-gradient(to right, #ffe6f0, #fffafc);
+      overflow: hidden;
+    }
+
+    .lock-screen {
+      height: 100%;
+      width: 100%;
+      background-image: url(' '); /* Ritika's image */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(4px);
+      position: absolute;
+      z-index: 100;
+    }
+
+    .lock-screen h2 {
+      font-size: 2rem;
+      color: #fff;
+      background: rgba(0,0,0,0.5);
+      padding: 10px 30px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .lock-screen input {
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      width: 220px;
+      text-align: center;
+    }
+
+    .lock-screen button {
+      padding: 10px 25px;
+      font-size: 16px;
+      background: #ff66b2;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .lock-screen button:hover {
+      background: #e055a3;
+    }
+
+    .main-page {
+      display: none;
+      height: 100%;
+      background: radial-gradient(circle at top, #fff0f5 10%, #ffe6e6 90%);
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+      overflow: auto;
+    }
+
+    .main-page h1 {
+      margin-top: 100px;
+      font-size: 3rem;
+      color: #cc0077;
+    }
+
+    .main-page p {
+      font-size: 1.2rem;
+      color: #444;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0 }
+      to { opacity: 1 }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔐 Password Gate -->
+  <div class="lock-screen" id="lockScreen">
+    <h2>Enter the Magic Word 💫</h2>
+    <input type="password" id="passwordInput" placeholder="Enter password" />
+    <button onclick="checkPassword()">Unlock</button>
+  </div>
+<!-- Hero Section with Ritika's Photo -->
+<div style="text-align: center; padding: 60px 20px; background: #ffe6f0;">
+  <h1 style="font-size: 2.5rem; color: #cc0077;">💖 Ritika – Meri Pyari Bahan Bas aapke Liye💖</h1>
+  <img src="https://i.ibb.co/fd2HgZSG/Screenshot-2025-08-02-23-39-54-51-a63b0f8076346d26cbdc1b971a1da2a7.jpg" 
+       alt="Ritika" 
+       style="max-width: 300px; margin-top: 30px; border-radius: 20px; box-shadow: 0 0 20px #ff99cc;">
+  <p style="margin-top: 20px; font-size: 1.2rem; color: #444;">"Meri pyaari si behan, duniya ka sabse khoobsurat tohfa" 🌸</p>
+</div>
+  <!-- ✨ Cinematic Opening -->
+  <div class="main-page" id="mainPage">
+    <h1>Ritika – Tere Naam Ek Jadoo Sa Page ✨</h1>
+    <p>Yeh page ek pyaare dil se bana hai... sirf mere bahan ke liye 💖</p>
+  </div>
+
+<div style="padding: 20px 20px;">
+  <h2 style="color:#cc0077; font-size:2.2rem;">🎁 Tumhare Liye Kuchh tohfe </h2>
+  
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px;">
+    
+    <!-- Gift 1 -->
+    <div style="background: #fff0f5; padding: 20px; border-radius: 20px; width: 250px; box-shadow: 0 0 10px rgba(0,0,0,0.1); transition: 0.3s;">
+      <img src="https://media.tenor.com/K8mhHFMN6DMAAAAM/rakhi.gif" alt="Gift" style="width:100px;">
+      <h3>Virtual Rakhi</h3>
+      <p>Tumhe rakhi bandhne ka ehsaas... screen ke paar bhi dil se hota hai ❤️</p>
+    </div>
+
+    <!-- Gift 2 -->
+    <div style="background: #f0fff0; padding: 20px; border-radius: 20px; width: 250px; box-shadow: 0 0 10px rgba(0,0,0,0.1); transition: 0.3s;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4C8ofp0Y29wzjXXjyiISBIWR6Ik9GfhasXttzRCWaqkNtWTuPtzxmFYOF&s=10" alt="Chocolate" style="width:100px;">
+      <h3>Chocolate Rain</h3>
+      <p>Ye Choclates meri pyari Bahan ke Liye 🍫</p>
+    </div>
+
+    <!-- Gift 3 -->
+    <div style="background: #fffaf0; padding: 20px; border-radius: 20px; width: 250px; box-shadow: 0 0 10px rgba(0,0,0,0.1); transition: 0.3s;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi4y1xGaw7rTxUNWtx7rgUhZEllu_esrpTN2aTdd2q5-3zqrIlNlaBAYPF&s=10" style="width:100px;">
+      <h3>Secret Memory Box</h3>
+      <p>Ye Lo Choclate Khila Bhi Do Aur Kha La 💌</p>
+    </div>
+
+    <!-- Gift 4 (Extra Pyar Se) -->
+    <div style="background: #e0f7ff; padding: 20px; border-radius: 20px; width: 250px; box-shadow: 0 0 10px rgba(0,0,0,0.1); transition: 0.3s;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlyWMvD2DMfSTe7XZKsyWjjMzMks62QbsMcWHuB01ICRmNnwJQSNYNeAE&s=10" alt="Surprise" style="width:100px;">
+      <h3>Time Machine 🎞️</h3>
+      <p>Ek pal tumhare Liye Bhale Ham Dur Hai Bahan Par khyal to hamesha tumhara hai 👧</p>
+    </div>
+<!-- Gift Card with Ritika Photo -->
+<div style="border: 2px dashed #cc0077; padding: 20px; border-radius: 15px; background: #fff0f6; text-align: center;">
+  <img src="https://i.ibb.co/fd2HgZSG/Screenshot-2025-08-02-23-39-54-51-a63b0f8076346d26cbdc1b971a1da2a7.jpg" 
+       alt="Ritika Smiling" 
+       style="max-width: 120px; border-radius: 50%; box-shadow: 0 0 10px #cc0077;">
+  <h3 style="margin-top: 10px; color: #cc0077;">Tumhara Smile Hi Sabse Bada Gift Hai</h3>
+</div>
+  </div>
+</div>
+
+<!-- 💬 Quote Slider -->
+<div style="padding: 60px 20px; background: #fff3f3;">
+  <h2 style="font-size:2rem; color:#cc0077;">💌 Tere Naam Kuchh Jazbaat</h2>
+  <div id="quoteBox" style="margin-top: 30px; font-size: 1.4rem; color: #333; max-width: 600px; margin-inline:auto; font-style: italic; transition: 0.5s;">
+    "Teri hansi mere liye ek poori duniya jaisi hai..."
+  </div>
+</div>
+<!-- 🎉 Celebration Button Section -->
+<div style="padding: 60px 20px; text-align: center;">
+  <h2 style="color: #cc0077;">🌸 Celebration Mode 🌸</h2>
+  <button onclick="startCelebration()" style="padding: 15px 30px; font-size: 18px; background: #ff66b2; color: white; border: none; border-radius: 25px; cursor: pointer;">Click to Celebrate 🎉</button>
+</div>
+
+<!-- 💖 Flower Rain Container -->
+<div id="celebrationContainer"></div>
+
+<!-- 🎶 Music -->
+<audio id="bgMusic" src="https://cdn.pixabay.com/download/audio/2022/12/20/audio_7c07d3aa9a.mp3?filename=romantic-piano-12693.mp3"></audio>
+
+<!-- 🌟 Big Text Message -->
+<div id="bigText" style="display:none; position: fixed; top: 30%; left: 50%; transform: translateX(-50%); font-size: 3rem; font-weight: bold; color: #ff3399; text-shadow: 2px 2px #fff; z-index: 9999;">
+</div>
+<!-- 💌 Heartfelt Letter Section -->
+<div style="padding: 50px 20px; background: #fff0f5; text-align: center;">
+  <h2 style="color:#cc0077; font-size:2rem;">📜 Tere Naam Ek Khaas Khat</h2>
+  <div style="max-width: 700px; margin: 30px auto; font-size: 1.2rem; color: #444; line-height: 1.8;">
+    <p>Ritika,</p>
+    <p>
+      Main shabdon mein woh sab nahi keh sakta jo tu mere liye hai...  
+      Lekin iss page ke har rang, har gift, har animation mein sirf ek hi naam chhupa hai — **Tera**.
+    </p>
+    <p>
+      Jab bhi life thoda hard ho, ya tujhe lage ki koi nahi samajhta — toh bas yeh page खोल लेना.  
+      Kyunki main hamesha yahaan hoon, bina kisi condition ke.  
+    </p>
+    <p>
+      Tu meri sirf behan nahi hai… tu meri **khushi, meri shakti, meri aankhon ka garv** hai.  
+      Main duniya ko nahi jeet sakta, par tera ek smile meri जीत है 💖
+    </p>
+    <p style="font-weight:bold;">Hamesha tere saath,  
+    <br>— Tera Bhai Hrishi 🫶</p>
+  </div>
+</div>
+
+<!-- 🧚‍♀️ Anime-style Image (Placeholder) -->
+<div style="padding: 60px 20px; background: #e6f7ff; text-align: center;">
+  <h2 style="color:#0099cc; font-size:2rem;">🎨 Tumhara Anime Avatar</h2>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG2bSAjvrhVRLfhRIrHRGL4I-5fyBI9DCToLiTOitaKffGN5_b2jb7QgAR&s=10" alt="Anime Sibling" style="max-width: 300px; border-radius: 20px; box-shadow: 0 0 15px #aaa;">
+  <p style="margin-top: 20px;">Agar hum dono anime mein hote... toh aise dikhte 💫</p>
+</div>
+
+<!-- 🌟 Final Goodbye Section -->
+<div style="padding: 80px 20px; background: #fffaf0; text-align: center;">
+  <h2 style="color:#cc0077; font-size:2rem;">💖 The End? Nahi... Sirf Ek Naya Rishta</h2>
+  <p style="max-width: 600px; margin: auto; font-size: 1.2rem; color: #555;">Yeh webpage sirf ek surprise nahi... ek rishta hai.  
+    <br>Jise kabhi delete nahi karna, kabhi bhoolna nahi.  
+    <br><strong>Tum is page ko jitni baar chaho khol sakti ho… main hamesha yahaan rahunga.</strong></p>
+
+
+
+  <p style="font-size: 2rem; color: #ff66b2; margin-top: 40px;">💞 Happy Raksha Bandhan Pyari Bahna💞</p>
+</div>
+<script>
+  function startCelebration() {
+    // Play music
+    const music = document.getElementById("bgMusic");
+    music.play();
+
+    // Show text
+    const bigText = document.getElementById("bigText");
+    bigText.style.display = "block";
+
+    // Flower rain
+    const container = document.getElementById("celebrationContainer");
+    for (let i = 0; i < 40; i++) {
+      const flower = document.createElement("div");
+      flower.innerHTML = "🌸";
+      flower.style.position = "fixed";
+      flower.style.left = Math.random() * 100 + "vw";
+      flower.style.top = "-50px";
+      flower.style.fontSize = "24px";
+      flower.style.animation = `fall ${4 + Math.random() * 4}s linear ${Math.random()}s infinite`;
+      container.appendChild(flower);
+    }
+  }
+
+  // 🌸 Falling animation
+  const styleSheet = document.createElement("style");
+  styleSheet.type = "text/css";
+  styleSheet.innerText = `
+    @keyframes fall {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(100vh); opacity: 0; }
+    }
+  `;
+  document.head.appendChild(styleSheet);
+
+
+  // 💬 Auto-changing Quotes
+  const quotes = [
+    "Teri hansi mere liye ek poori duniya jaisi hai...",
+    "Tu mere liye sirf behan nahi, ek blessing hai jo har roz kaam aati hai ❤️",
+    "Agar main kabhi gira, toh mujhe sambhalne ke liye sirf ek naam yaad aaya: Ritika.",
+    "Tujhse behtar Rakhi ka matlab mujhe kabhi samajh hi nahi aaya...",
+    "Tere bina ye page kya, meri zindagi bhi adhoori lagti hai 💔"
+  ];
+  let qIndex = 0;
+
+  setInterval(() => {
+    qIndex = (qIndex + 1) % quotes.length;
+    document.getElementById("quoteBox").textContent = quotes[qIndex];
+  }, 5000);
+
+  
+    const correctPassword = "Ritika";
+
+    function checkPassword() {
+      const entered = document.getElementById("passwordInput").value;
+      if (entered === correctPassword) {
+        document.getElementById("lockScreen").style.display = "none";
+        document.getElementById("mainPage").style.display = "block";
+        document.body.style.overflow = "auto";
+      } else {
+        alert("Wrong password! 💔");
+      }
+    }
+  </script>
+
+</body>
+</html>
